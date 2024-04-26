@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Camera Kit Web</title>
+</head>
+
+<body>
+  <main>
+    <input type="file" id="image-input" accept="image/*" style="display: none;">
+    <section class="controls">
+      <div class="input-container">
+        <div class="dropdown-input"><label class="input-label" for="lens-select">Lens</label>
+          <div style="position: relative"><select id="lens-select" class="dropdown-select" data-testid="lens-select">
+              <option value="">Choose a Lens...</option>
+            </select> <svg class="chevron-select" width="16" height="16" viewBox="0 0 16 16" fill="#3A3E41"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M8.04903 8.94148L11.8176 5.17288L12.7604 6.11569L8.04903 10.8271L3.33763 6.11569L4.28044 5.17288L8.04903 8.94148Z">
+              </path>
+            </svg></div>
+        </div>
+      </div>
+      <div class="input-container">
+        <div class="dropdown-input"><label class="input-label" for="source-select">Camera Source</label>
+          <div style="position: relative"><select id="source-select" class="dropdown-select"
+              data-testid="source-select">
+              <option value="">Choose a source...</option>
+            </select> <svg class="chevron-select" width="16" height="16" viewBox="0 0 16 16" fill="#3A3E41"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M8.04903 8.94148L11.8176 5.17288L12.7604 6.11569L8.04903 10.8271L3.33763 6.11569L4.28044 5.17288L8.04903 8.94148Z">
+              </path>
+            </svg></div>
+        </div>
+      </div>
+    </section>
+    <canvas id="canvas-output"></canvas>
+  </main>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
